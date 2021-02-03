@@ -32,5 +32,10 @@ select * from userdb;
 
 select * from chat;
 
+select
+	c.id, u.username, c.message, c.time
+from chat c
+join userdb u on u.id = c.userID;
+
 select * from mysql.user;
 ALTER USER 'bangjekss'@'%' IDENTIFIED WITH mysql_native_password BY 'lolipop9098';

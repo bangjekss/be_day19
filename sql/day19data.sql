@@ -51,8 +51,10 @@ DROP TABLE IF EXISTS `chat`;
 CREATE TABLE `chat` (
   `id` int NOT NULL AUTO_INCREMENT,
   `message` varchar(200) NOT NULL,
+  `time` varchar(45) NOT NULL,
+  `userID` int NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=168 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -61,7 +63,7 @@ CREATE TABLE `chat` (
 
 LOCK TABLES `chat` WRITE;
 /*!40000 ALTER TABLE `chat` DISABLE KEYS */;
-INSERT INTO `chat` VALUES (1,'acong halo'),(2,'halo juga'),(3,'hai'),(4,'lop yu'),(5,'yu too'),(6,'miss you'),(7,'hi'),(8,'hi'),(9,'hi'),(10,'hi juga'),(11,'haloo'),(12,'eaea'),(13,'dsa'),(14,''),(15,'d');
+INSERT INTO `chat` VALUES (160,'heloow','10:26 PM',45),(161,'hii','10:31 PM',45),(162,'halooo','10:40 PM',45),(163,'acong','10:40 PM',45),(164,'aww','10:41 PM',45),(165,'a','10:42 PM',45),(166,'skuy','10:42 PM',45),(167,'okkk','10:44 PM',45);
 /*!40000 ALTER TABLE `chat` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -220,7 +222,7 @@ CREATE TABLE `userdb` (
 
 LOCK TABLES `userdb` WRITE;
 /*!40000 ALTER TABLE `userdb` DISABLE KEYS */;
-INSERT INTO `userdb` VALUES (15,'lianeddy','lian.eddy@gmail.com','asd123','BSD',1,0),(16,'Susilo','susilo@mail.com','asd','Bandung',1,0),(18,'joko123','joko@mail.com','asd','Bandung',2,0),(22,'bangjek','bangjek@gmail.com','d4b7514113fc3d68852f626dc2957775475e988db0b8a8a732bc4f5cb992fb92','Tangerang',2,0),(23,'eaea','eaea@gmail.com','b1c3909f31d211502e3bd611f6987d3302c37ccc9eb571206a3185536e58dd13','Tangerang',2,0),(44,'asdfsadf','sadfas@g.id','f53bcdd5500f510cb091579cc62cf4f57c87b183a58fac53400e47d430764b8d',NULL,2,0),(45,'mrazak.qq','razak9098@gmail.com','4c1383f7a454d8fadb28da32f349361b7e34e7275925245a07d18a16fbedec48',NULL,2,1);
+INSERT INTO `userdb` VALUES (15,'lianeddy','lian.eddy@gmail.com','asd123','BSD',1,0),(16,'Susilo','susilo@mail.com','asd','Bandung',1,0),(18,'joko123','joko@mail.com','asd','Bandung',2,0),(22,'bangjek','bangjek@gmail.com','d4b7514113fc3d68852f626dc2957775475e988db0b8a8a732bc4f5cb992fb92','Tangerang',2,0),(23,'eaea','eaea@gmail.com','b1c3909f31d211502e3bd611f6987d3302c37ccc9eb571206a3185536e58dd13','Tangerang',2,0),(44,'asdfsadf','sadfas@g.id','f53bcdd5500f510cb091579cc62cf4f57c87b183a58fac53400e47d430764b8d',NULL,2,0),(45,'mrazak.qq','razak9098@gmail.com','f53bcdd5500f510cb091579cc62cf4f57c87b183a58fac53400e47d430764b8d',NULL,2,1);
 /*!40000 ALTER TABLE `userdb` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -233,4 +235,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-02-02 11:06:18
+-- Dump completed on 2021-02-03  8:32:25
